@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="1160" viewBox="0 0 900 1160">
+  <rect width="900" height="1160" fill="#f1f7f5"/>
+  <rect x="95" y="62" width="710" height="1036" rx="28" fill="#fff" stroke="#dce9e4" stroke-width="3"/>
+  <rect x="95" y="62" width="710" height="165" rx="28" fill="#eaf7f2"/>
+  <path d="M95 198h710v29H95z" fill="#eaf7f2"/>
+  <circle cx="161" cy="138" r="31" fill="#d7f0e7"/>
+  <path d="M143 138h36m-18-18v36" stroke="#39a98c" stroke-width="8" stroke-linecap="round"/>
+  <text x="215" y="132" font-family="Arial,sans-serif" font-size="34" font-weight="700" fill="#252b4c">SAMPLE MEDICAL RECORD</text>
+  <text x="215" y="169" font-family="Arial,sans-serif" font-size="18" fill="#738198">Illustration only · Fictional example</text>
+  <rect x="145" y="270" width="610" height="104" rx="15" fill="#f8fbfa" stroke="#e5eeea" stroke-width="2"/>
+  <text x="174" y="312" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#48516b">PATIENT</text>
+  <text x="174" y="346" font-family="Arial,sans-serif" font-size="21" fill="#667087">Sample patient · no personal information</text>
+  <text x="145" y="435" font-family="Arial,sans-serif" font-size="22" font-weight="700" fill="#303653">PRESCRIPTION SUMMARY</text>
+  <path d="M145 458h610" stroke="#e6eeeb" stroke-width="2"/>
+  <text x="150" y="515" font-family="Arial,sans-serif" font-size="18" fill="#4d5872">Medication details are intentionally omitted.</text>
+  <text x="150" y="552" font-family="Arial,sans-serif" font-size="18" fill="#4d5872">This sample is provided only to demonstrate document upload.</text>
+  <rect x="145" y="615" width="610" height="138" rx="16" fill="#fff8e7" stroke="#f3e4bc" stroke-width="2"/>
+  <circle cx="184" cy="661" r="15" fill="#f5cc69"/>
+  <text x="216" y="667" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#826824">Not a real prescription</text>
+  <text x="176" y="707" font-family="Arial,sans-serif" font-size="16" fill="#8b7950">Do not use this illustration for health decisions.</text>
+  <rect x="145" y="803" width="610" height="2" fill="#e6eeeb"/>
+  <text x="145" y="852" font-family="Arial,sans-serif" font-size="15" fill="#929aab">Example document for CareCompass navigation</text>
+  <text x="145" y="884" font-family="Arial,sans-serif" font-size="15" fill="#929aab">This tool provides navigation help only and is not medical advice.</text>
+</svg>

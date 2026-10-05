@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="1240" viewBox="0 0 960 1240" role="img" aria-labelledby="title description">
+  <title id="title">Fictional sample prescription for CareCompass testing</title>
+  <desc id="description">A clearly marked demo-only sample medical document with deliberately missing dosage information.</desc>
+  <rect width="960" height="1240" fill="#eef5f3"/>
+  <rect x="68" y="48" width="824" height="1144" rx="22" fill="#ffffff" stroke="#dce7e4" stroke-width="3"/>
+  <rect x="68" y="48" width="824" height="194" rx="22" fill="#f2fbf8"/>
+  <path d="M68 220h824" stroke="#dce7e4" stroke-width="3"/>
+  <rect x="112" y="98" width="62" height="62" rx="18" fill="#1d6fe8"/>
+  <path d="M143 112v34M126 129h34" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+  <text x="196" y="126" fill="#1e1b4b" font-family="Arial, sans-serif" font-size="30" font-weight="700">CareCompass Demo Clinic</text>
+  <text x="196" y="162" fill="#64748b" font-family="Arial, sans-serif" font-size="18">Sample document for upload testing only</text>
+  <rect x="112" y="274" width="736" height="52" rx="12" fill="#fff6dc" stroke="#f5d27a"/>
+  <text x="480" y="308" text-anchor="middle" fill="#7a5710" font-family="Arial, sans-serif" font-size="19" font-weight="700" letter-spacing="2">DEMO ONLY · NOT A REAL PRESCRIPTION</text>
+  <text x="112" y="394" fill="#1e1b4b" font-family="Arial, sans-serif" font-size="21" font-weight="700">PATIENT</text>
+  <text x="112" y="432" fill="#25324b" font-family="Arial, sans-serif" font-size="24">Demo Patient</text>
+  <text x="560" y="394" fill="#1e1b4b" font-family="Arial, sans-serif" font-size="21" font-weight="700">DATE</text>
+  <text x="560" y="432" fill="#25324b" font-family="Arial, sans-serif" font-size="24">05 Oct 2026</text>
+  <path d="M112 470h736" stroke="#e6ecea" stroke-width="2"/>
+  <text x="112" y="538" fill="#7c6ae6" font-family="Georgia, serif" font-size="52" font-style="italic">Rx</text>
+  <rect x="112" y="574" width="736" height="226" rx="18" fill="#fbfcfe" stroke="#dce5ee" stroke-width="2"/>
+  <text x="148" y="630" fill="#1e1b4b" font-family="Arial, sans-serif" font-size="20" font-weight="700">ITEM AS WRITTEN</text>
+  <text x="148" y="678" fill="#25324b" font-family="Arial, sans-serif" font-size="25">Example medicine</text>
+  <text x="148" y="732" fill="#64748b" font-family="Arial, sans-serif" font-size="19">Dosage: not specified in this sample</text>
+  <text x="148" y="766" fill="#64748b" font-family="Arial, sans-serif" font-size="19">Instructions: not specified in this sample</text>
+  <text x="112" y="870" fill="#1e1b4b" font-family="Arial, sans-serif" font-size="20" font-weight="700">DEMO NOTE</text>
+  <text x="112" y="910" fill="#475569" font-family="Arial, sans-serif" font-size="19">This fictional page is included to test document reading only.</text>
+  <text x="112" y="944" fill="#475569" font-family="Arial, sans-serif" font-size="19">It contains no real patient information and is not for clinical use.</text>
+  <path d="M112 1000h736" stroke="#e6ecea" stroke-width="2"/>
+  <text x="112" y="1054" fill="#64748b" font-family="Arial, sans-serif" font-size="17">CareCompass provides navigation help only, not medical advice.</text>
+  <text x="112" y="1084" fill="#64748b" font-family="Arial, sans-serif" font-size="17">Always confirm medical information with your healthcare professional.</text>
+</svg>

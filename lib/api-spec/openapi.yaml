@@ -10,6 +10,8 @@ servers:
 tags:
   - name: health
     description: Health operations
+  - name: carecompass
+    description: Private, in-memory patient navigation assistance
 paths:
   /healthz:
     get:
@@ -24,6 +26,49 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+  /carecompass/navigate:
+    post:
+      operationId: createCareCompassPlan
+      tags: [carecompass]
+      summary: Create a non-diagnostic hospital navigation plan
+      description: Processes the request and optional document in memory only. No patient data is persisted.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/CareCompassRequest"
+      responses:
+        "200":
+          description: Navigation plan
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/CareCompassPlan"
+        "400":
+          description: Invalid request
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "413":
+          description: Request exceeds the document size limit
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "502":
+          description: The AI response could not be validated
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
+        "503":
+          description: Claude is not configured on the server
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
 components:
   schemas:
     HealthStatus:
@@ -33,4 +78,147 @@ components:
           type: string
       required:
         - status
+    ApiError:
+      type: object
+      properties:
+        error:
+          type: string
+      required:
+        - error
+    CareCompassRequest:
+      type: object
+      properties:
+        situation:
+          type: string
+          minLength: 3
+          maxLength: 3000
+        documentText:
+          type: string
+          maxLength: 12000
+        fileName:
+          type: string
+          maxLength: 255
+        mediaType:
+          type: string
+          enum:
+            - application/pdf
+            - image/jpeg
+            - image/png
+            - image/gif
+            - image/webp
+        documentBase64:
+          type: string
+          maxLength: 9800000
+      required:
+        - situation
+    CareCompassPlan:
+      type: object
+      properties:
+        department:
+          $ref: "#/components/schemas/CareCompassDepartment"
+        extractedInformation:
+          $ref: "#/components/schemas/CareCompassExtractedInformation"
+        visitChecklist:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareCompassChecklistItem"
+        documentSummary:
+          type: ["string", "null"]
+        questionsToAskDoctor:
+          type: array
+          minItems: 5
+          maxItems: 7
+          items:
+            type: string
+        emergency:
+          $ref: "#/components/schemas/CareCompassEmergency"
+      required:
+        - department
+        - extractedInformation
+        - visitChecklist
+        - documentSummary
+        - questionsToAskDoctor
+        - emergency
+    CareCompassDepartment:
+      type: object
+      properties:
+        name:
+          type: string
+        reason:
+          type: string
+        urgency:
+          type: string
+          enum:
+            - routine
+            - soon
+            - urgent-seek-care-now
+      required:
+        - name
+        - reason
+        - urgency
+    CareCompassExtractedInformation:
+      type: object
+      properties:
+        medicines:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareCompassMedicine"
+        dates:
+          type: array
+          items:
+            type: string
+        doctors:
+          type: array
+          items:
+            type: string
+        previousConditions:
+          type: array
+          items:
+            type: string
+        otherDetails:
+          type: array
+          items:
+            type: string
+      required:
+        - medicines
+        - dates
+        - doctors
+        - previousConditions
+        - otherDetails
+    CareCompassMedicine:
+      type: object
+      properties:
+        name:
+          type: string
+        dosage:
+          type: ["string", "null"]
+        instructions:
+          type: ["string", "null"]
+      required:
+        - name
+        - dosage
+        - instructions
+    CareCompassChecklistItem:
+      type: object
+      properties:
+        id:
+          type: string
+        label:
+          type: string
+        checked:
+          type: boolean
+      required:
+        - id
+        - label
+        - checked
+    CareCompassEmergency:
+      type: object
+      properties:
+        detected:
+          type: boolean
+        message:
+          type: ["string", "null"]
+      required:
+        - detected
+        - message
 
