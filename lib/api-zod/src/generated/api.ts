@@ -37,10 +37,11 @@ export const CreateCareCompassPlanBody = zod.object({
   "documentText": zod.string().max(createCareCompassPlanBodyDocumentTextMax).optional(),
   "fileName": zod.string().max(createCareCompassPlanBodyFileNameMax).optional(),
   "mediaType": zod.enum(['application/pdf', 'image/jpeg', 'image/png', 'image/gif', 'image/webp']).optional(),
-  "documentBase64": zod.string().max(createCareCompassPlanBodyDocumentBase64Max).optional()
+  "documentBase64": zod.string().max(createCareCompassPlanBodyDocumentBase64Max).optional(),
+  "language": zod.enum(['English', 'Tamil', 'Hindi']).optional()
 })
 
-export const createCareCompassPlanResponseQuestionsToAskDoctorMin = 5;
+export const createCareCompassPlanResponseQuestionsToAskDoctorMin = 0;
 export const createCareCompassPlanResponseQuestionsToAskDoctorMax = 7;
 
 
@@ -72,7 +73,47 @@ export const CreateCareCompassPlanResponse = zod.object({
   "emergency": zod.object({
   "detected": zod.boolean(),
   "message": zod.string().nullable()
-})
+}),
+  "doctors": zod.array(zod.object({
+  "name": zod.string(),
+  "specialty": zod.string(),
+  "hospital": zod.string(),
+  "city": zod.string(),
+  "qualification": zod.string(),
+  "experience": zod.string(),
+  "languages": zod.array(zod.string()),
+  "timing": zod.string(),
+  "location": zod.string(),
+  "profileUrl": zod.string().nullable()
+})).optional(),
+  "relatedDepartments": zod.array(zod.object({
+  "name": zod.string(),
+  "doctors": zod.array(zod.object({
+  "name": zod.string(),
+  "specialty": zod.string(),
+  "hospital": zod.string(),
+  "city": zod.string(),
+  "qualification": zod.string(),
+  "experience": zod.string(),
+  "languages": zod.array(zod.string()),
+  "timing": zod.string(),
+  "location": zod.string(),
+  "profileUrl": zod.string().nullable()
+}))
+})).optional(),
+  "matchedDoctor": zod.union([zod.object({
+  "name": zod.string(),
+  "specialty": zod.string(),
+  "hospital": zod.string(),
+  "city": zod.string(),
+  "qualification": zod.string(),
+  "experience": zod.string(),
+  "languages": zod.array(zod.string()),
+  "timing": zod.string(),
+  "location": zod.string(),
+  "profileUrl": zod.string().nullable()
+}),zod.null()]).optional(),
+  "dataNote": zod.string().optional()
 })
 
 

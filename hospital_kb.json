@@ -1,0 +1,736 @@
+{
+  "departments": [
+    {
+      "name": "General Medicine",
+      "reasons": [
+        "Unexplained fever, fatigue, weakness, weight loss, generalized body ache, high/low blood pressure checkup, routine health review, diabetes management, non-specific mild symptoms"
+      ],
+      "docs": [
+        "Recent routine blood tests (CBC, lipid profile, fasting blood glucose)",
+        "Blood pressure log / diabetes blood sugar logbook",
+        "List of all regular vitamins, tonics, and over-the-counter tablets"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Sandeep Budhiraja",
+          "specialty": "Internal Medicine",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD",
+          "experience": "30+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sushila Kataria",
+          "specialty": "Internal Medicine",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD (General Medicine)",
+          "experience": "25 years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Satish Koul",
+          "specialty": "Internal Medicine",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD (General Medicine)",
+          "experience": "24 years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Raymond Dominic Savio",
+          "specialty": "Internal Medicine & Critical Care",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MD, DNB",
+          "experience": "19+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Mugdha Tapdiya",
+          "specialty": "Internal Medicine",
+          "hospital": "Fortis Hospital, Vasant Kunj",
+          "city": "Delhi",
+          "qualification": "MD",
+          "experience": "20 Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Cardiology",
+      "reasons": [
+        "Mild non-emergency chest discomfort, palpitations, racing heartbeat, irregular pulse, breathless on exertion, mild shortness of breath on stairs, high blood pressure follow-up, swollen ankles/legs, past heart surgery checkup"
+      ],
+      "docs": [
+        "Previous ECG / Echo reports",
+        "Treadmill Test (TMT) / Holter monitor recordings",
+        "Recent lipid / cholesterol panel reports",
+        "Angiogram or cardiac stent discharge summary if applicable"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. (Col) Manjinder Sandhu",
+          "specialty": "Interventional Cardiology",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "35 Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Balbir Singh",
+          "specialty": "Cardiology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD, DM",
+          "experience": "30+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Y Vijayachandra Reddy",
+          "specialty": "Cardiology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MD, DM",
+          "experience": "28+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Praveen Chandra",
+          "specialty": "Interventional Cardiology",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "30+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. TS Kler",
+          "specialty": "Cardiology",
+          "hospital": "Fortis Flt. Lt. Rajan Dhall Hospital, Vasant Kunj",
+          "city": "Delhi",
+          "qualification": "MD, DM",
+          "experience": "35+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Orthopaedics",
+      "reasons": [
+        "Joint pain, knee swelling, back pain, neck stiffness, shoulder strain, suspected sprain, old fracture pain, arthritis follow-up, difficulty walking"
+      ],
+      "docs": [
+        "Recent X-Rays / MRI scans / CT scans of the affected joint or spine",
+        "Previous orthopaedic surgeon notes or cast/brace records",
+        "Bone mineral density (DEXA) reports if available"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Madan Mohan Reddy",
+          "specialty": "Orthopaedics",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MBBS, MS (Orth)",
+          "experience": "30+ Years",
+          "languages": ["English", "Tamil", "Telugu"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. SKS Marya",
+          "specialty": "Orthopaedics & Joint Replacement",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MS (Orth), DNB",
+          "experience": "35+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Ashok Rajgopal",
+          "specialty": "Orthopaedics",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MS, MCh (Orth)",
+          "experience": "40+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Subhash Jangid",
+          "specialty": "Orthopaedics",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MS (Orth), DNB",
+          "experience": "22+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. IPS Oberoi",
+          "specialty": "Orthopaedics & Arthroscopy",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MS (Orth), MCh",
+          "experience": "25+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Dermatology",
+      "reasons": [
+        "Skin rash, itching, eczema, psoriasis, acne, hair fall, fungal infection, nail discoloration, mole check, allergic hives"
+      ],
+      "docs": [
+        "List/samples of current skin creams, ointments, lotions, soaps, or shampoos used",
+        "Previous skin allergy test reports or biopsy reports",
+        "Clear photos of the rash when it first appeared if changed"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Ajita Bagai Kakkar",
+          "specialty": "Dermatology",
+          "hospital": "Max Smart Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD",
+          "experience": "26+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sachin Dhawan",
+          "specialty": "Dermatology",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "18+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. G R Ratnavel",
+          "specialty": "Dermatology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MD",
+          "experience": "25+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Devesh Mishra",
+          "specialty": "Dermatology",
+          "hospital": "Marengo Asia Hospitals, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "12+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Ramanjit Singh",
+          "specialty": "Dermatology",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "15+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Gastroenterology",
+      "reasons": [
+        "Chronic acidity, heartburn, indigestion, abdominal bloating, persistent constipation, chronic loose stools, jaundice review, fatty liver follow-up"
+      ],
+      "docs": [
+        "Abdominal ultrasound (USG) / CT scan reports",
+        "Upper GI endoscopy or colonoscopy reports",
+        "Liver Function Tests (LFT) and stool examination reports"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Kartik Natarajan",
+          "specialty": "Gastroenterology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MBBS, DNB Gastroenterology",
+          "experience": "8+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Vikas Singla",
+          "specialty": "Gastroenterology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD, DM",
+          "experience": "18+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Randhir Sud",
+          "specialty": "Gastroenterology",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "35+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Avnish Seth",
+          "specialty": "Gastroenterology & Hepatology",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "25+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Kapil Jamwal",
+          "specialty": "Gastroenterology",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "14+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "ENT",
+      "reasons": [
+        "Ear pain, ear discharge, hearing loss, ringing in ears (tinnitus), sinus congestion, nasal blockage, sore throat, hoarseness of voice, difficulty swallowing"
+      ],
+      "docs": [
+        "Audiometry (hearing test) reports",
+        "CT scan or X-Ray of the paranasal sinuses",
+        "Past prescription for nasal sprays or ear drops"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Atul Kumar Mittal",
+          "specialty": "ENT",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MBBS, MS (ENT)",
+          "experience": "33 Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sanjay Sachdeva",
+          "specialty": "ENT",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MS",
+          "experience": "40+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Babu Manohar",
+          "specialty": "ENT",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "DLO, MS (ENT)",
+          "experience": "30+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. KK Handa",
+          "specialty": "ENT & Head Neck Surgery",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MS, DNB",
+          "experience": "28+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Shashidhar TB",
+          "specialty": "ENT",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MS (ENT), DNB",
+          "experience": "18+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Ophthalmology",
+      "reasons": [
+        "Blurry vision, eye irritation, dry eyes, eye redness/watering, power check for spectacles, cataract evaluation, diabetic eye screening"
+      ],
+      "docs": [
+        "Current pair of spectacles / power prescription slip",
+        "Eye drop bottles or packaging currently in use",
+        "Previous eye pressure (intraocular pressure) or fundus checkup records"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Anita Sethi",
+          "specialty": "Ophthalmology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD Ophthalmology, FRCS",
+          "experience": "36+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Lalit Verma",
+          "specialty": "Ophthalmology",
+          "hospital": "Centre for Sight, Safdarjung Enclave, Delhi",
+          "city": "Delhi",
+          "qualification": "MD",
+          "experience": "30+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sudipta Mitra",
+          "specialty": "Ophthalmology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MS, FRCS",
+          "experience": "25+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Radhika Tandon",
+          "specialty": "Ophthalmology",
+          "hospital": "AIIMS, New Delhi",
+          "city": "Delhi",
+          "qualification": "MD, FRCS",
+          "experience": "25+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sameer Kaushal",
+          "specialty": "Ophthalmology",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "20+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Pulmonology",
+      "reasons": [
+        "Chronic cough, wheezing, seasonal asthma, allergy cough, bronchitis, breathless or breathlessness on exertion, breathless when climbing stairs, post-COVID lung follow-up, snoring / sleep apnea evaluation"
+      ],
+      "docs": [
+        "Recent Chest X-Ray or HRCT Chest scan films and reports",
+        "Spirometry (Pulmonary Function Test - PFT) reports",
+        "List of inhalers, rotahalers, or nebulizer medicines with dosage"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Manoj Kumar Goel",
+          "specialty": "Pulmonology & Sleep Medicine",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "32 Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Vivek Nangia",
+          "specialty": "Pulmonology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD",
+          "experience": "30+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Bornali Datta",
+          "specialty": "Respiratory & Sleep Medicine",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "20+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Rajkumar S",
+          "specialty": "Pulmonology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MD, DTCD",
+          "experience": "22+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Reshma Tewari",
+          "specialty": "Pulmonology",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "18+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Neurology",
+      "reasons": [
+        "Chronic migraines, frequent tension headaches, numbness or tingling in hands/feet, trembling/tremors, dizziness/vertigo, memory issues, nerve pain"
+      ],
+      "docs": [
+        "Brain / Spine MRI or CT scan films and reports",
+        "EEG (Electroencephalogram) or EMG / Nerve Conduction Study (NCS) reports",
+        "Headache diary or record of dizziness episodes"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Srikanth Srinivasan",
+          "specialty": "Neurology",
+          "hospital": "Apollo Hospitals, Greams Road, Chennai",
+          "city": "Chennai",
+          "qualification": "MD, DM (Neuro)",
+          "experience": "21+ Years",
+          "languages": ["English", "Tamil"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. (Col) Joy Dev Mukherji",
+          "specialty": "Neurology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MD, DM",
+          "experience": "31+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Praveen Gupta",
+          "specialty": "Neurology",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "18+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Atma Ram Bansal",
+          "specialty": "Neurology",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "16+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sumit Singh",
+          "specialty": "Neurology",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DM",
+          "experience": "22+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    },
+    {
+      "name": "Obstetrics and Gynaecology",
+      "reasons": [
+        "Irregular periods, heavy menstrual bleeding, pelvic pain, routine antenatal pregnancy checkup, PCOS/PCOD evaluation, menopause symptoms, fertility consultation"
+      ],
+      "docs": [
+        "Pelvic / Obstetric ultrasound (USG) scans and growth charts",
+        "Hormone profile blood tests (Thyroid, LH/FSH, Prolactin, AMH)",
+        "Dates of last menstrual periods (LMP tracker) and immunization card if pregnant"
+      ],
+      "doctors": [
+        {
+          "name": "Dr. Alka Gujral",
+          "specialty": "Obstetrics & Gynaecology",
+          "hospital": "Max Super Speciality Hospital, Saket",
+          "city": "Delhi",
+          "qualification": "MBBS, MS",
+          "experience": "45+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sohani Verma",
+          "specialty": "Obstetrics & Gynaecology",
+          "hospital": "Indraprastha Apollo Hospital, New Delhi",
+          "city": "Delhi",
+          "qualification": "MS, MRCOG",
+          "experience": "35+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Anjila Aneja",
+          "specialty": "Obstetrics & Gynaecology",
+          "hospital": "Fortis Memorial Research Institute, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD, DNB, MRCOG",
+          "experience": "28+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Sabhyata Gupta",
+          "specialty": "Gynaecology Oncology & Robotics",
+          "hospital": "Medanta – The Medicity, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "25+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        },
+        {
+          "name": "Dr. Veena Bhat",
+          "specialty": "Obstetrics & Gynaecology",
+          "hospital": "Artemis Hospital, Gurugram",
+          "city": "Gurugram",
+          "qualification": "MD",
+          "experience": "35+ Years",
+          "languages": ["English", "Hindi"],
+          "timing": "Confirm with the OPD desk",
+          "location": "Ask at reception",
+          "profile_url": null
+        }
+      ]
+    }
+  ],
+  "data_note": "Doctor details compiled from public hospital directories. They may be out of date. Confirm availability with the hospital."
+}

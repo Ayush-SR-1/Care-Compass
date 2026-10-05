@@ -24,6 +24,15 @@ export const CareCompassRequestMediaType = {
   'image/webp': 'image/webp',
 } as const;
 
+export type CareCompassRequestLanguage = typeof CareCompassRequestLanguage[keyof typeof CareCompassRequestLanguage];
+
+
+export const CareCompassRequestLanguage = {
+  English: 'English',
+  Tamil: 'Tamil',
+  Hindi: 'Hindi',
+} as const;
+
 export interface CareCompassRequest {
   /**
      * @minLength 3
@@ -37,6 +46,26 @@ export interface CareCompassRequest {
   mediaType?: CareCompassRequestMediaType;
   /** @maxLength 9800000 */
   documentBase64?: string;
+  language?: CareCompassRequestLanguage;
+}
+
+export interface CareCompassDoctor {
+  name: string;
+  specialty: string;
+  hospital: string;
+  city: string;
+  qualification: string;
+  experience: string;
+  languages: string[];
+  timing: string;
+  location: string;
+  /** @nullable */
+  profileUrl: string | null;
+}
+
+export interface CareCompassRelatedDepartment {
+  name: string;
+  doctors: CareCompassDoctor[];
 }
 
 export type CareCompassDepartmentUrgency = typeof CareCompassDepartmentUrgency[keyof typeof CareCompassDepartmentUrgency];
@@ -89,10 +118,14 @@ export interface CareCompassPlan {
   /** @nullable */
   documentSummary: string | null;
   /**
-     * @minItems 5
+     * @minItems 0
      * @maxItems 7
      */
   questionsToAskDoctor: string[];
   emergency: CareCompassEmergency;
+  doctors?: CareCompassDoctor[];
+  relatedDepartments?: CareCompassRelatedDepartment[];
+  matchedDoctor?: CareCompassDoctor | null;
+  dataNote?: string;
 }
 

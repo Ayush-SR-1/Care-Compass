@@ -57,6 +57,12 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/ApiError"
+        "422":
+          description: Document processing error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ApiError"
         "502":
           description: The AI response could not be validated
           content:
@@ -64,7 +70,7 @@ paths:
               schema:
                 $ref: "#/components/schemas/ApiError"
         "503":
-          description: Claude is not configured on the server
+          description: AI model or service is unreachable
           content:
             application/json:
               schema:
@@ -109,8 +115,62 @@ components:
         documentBase64:
           type: string
           maxLength: 9800000
+        language:
+          type: string
+          enum:
+            - English
+            - Tamil
+            - Hindi
       required:
         - situation
+    CareCompassDoctor:
+      type: object
+      properties:
+        name:
+          type: string
+        specialty:
+          type: string
+        hospital:
+          type: string
+        city:
+          type: string
+        qualification:
+          type: string
+        experience:
+          type: string
+        languages:
+          type: array
+          items:
+            type: string
+        timing:
+          type: string
+        location:
+          type: string
+        profileUrl:
+          type: ["string", "null"]
+      required:
+        - name
+        - specialty
+        - hospital
+        - city
+        - qualification
+        - experience
+        - languages
+        - timing
+        - location
+        - profileUrl
+    CareCompassRelatedDepartment:
+      type: object
+      properties:
+        name:
+          type: string
+        doctors:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareCompassDoctor"
+      required:
+        - name
+        - doctors
     CareCompassPlan:
       type: object
       properties:
@@ -126,12 +186,26 @@ components:
           type: ["string", "null"]
         questionsToAskDoctor:
           type: array
-          minItems: 5
+          minItems: 0
           maxItems: 7
           items:
             type: string
         emergency:
           $ref: "#/components/schemas/CareCompassEmergency"
+        doctors:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareCompassDoctor"
+        relatedDepartments:
+          type: array
+          items:
+            $ref: "#/components/schemas/CareCompassRelatedDepartment"
+        matchedDoctor:
+          oneOf:
+            - $ref: "#/components/schemas/CareCompassDoctor"
+            - type: "null"
+        dataNote:
+          type: string
       required:
         - department
         - extractedInformation
@@ -221,4 +295,3 @@ components:
       required:
         - detected
         - message
-

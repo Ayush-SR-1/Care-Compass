@@ -7,8 +7,10 @@
  */
 import type { CareCompassChecklistItem } from './careCompassChecklistItem';
 import type { CareCompassDepartment } from './careCompassDepartment';
+import type { CareCompassDoctor } from './careCompassDoctor';
 import type { CareCompassEmergency } from './careCompassEmergency';
 import type { CareCompassExtractedInformation } from './careCompassExtractedInformation';
+import type { CareCompassRelatedDepartment } from './careCompassRelatedDepartment';
 
 export interface CareCompassPlan {
   department: CareCompassDepartment;
@@ -17,9 +19,13 @@ export interface CareCompassPlan {
   /** @nullable */
   documentSummary: string | null;
   /**
-     * @minItems 5
+     * @minItems 0
      * @maxItems 7
      */
   questionsToAskDoctor: string[];
   emergency: CareCompassEmergency;
+  doctors?: CareCompassDoctor[];
+  relatedDepartments?: CareCompassRelatedDepartment[];
+  matchedDoctor?: CareCompassDoctor | null;
+  dataNote?: string;
 }
