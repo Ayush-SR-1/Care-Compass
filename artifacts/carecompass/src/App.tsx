@@ -88,9 +88,17 @@ function BrandSectionHeading({ label, title, copy }: { label: string; title: str
 }
 
 function DepartmentTiles({ count = 4 }: { count?: number }) {
+  const photoPositions = ['center 24%', 'center 42%', 'center 72%', 'center 54%'];
   return <div className="department-grid">{departments.slice(0, count).map((dept) => {
     const Icon = dept.icon;
-    return <Link href="/departments" key={dept.name} className="department-tile"><span className="department-icon"><Icon size={21} /></span><strong>{dept.name}</strong><span>{dept.detail}</span></Link>;
+    const index = departments.indexOf(dept);
+    return <Link href="/departments" key={dept.name} className="department-tile">
+      <span className="department-tile-photo">
+        <img src="/doctor-patient.jpg" alt="" style={{ objectPosition: photoPositions[index % photoPositions.length] }} />
+        <span className="department-photo-icon"><Icon size={18} /></span>
+        <span className="department-photo-label"><strong>{dept.name}</strong><span>{dept.detail}</span></span>
+      </span>
+    </Link>;
   })}</div>;
 }
 
