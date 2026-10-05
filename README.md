@@ -1,5 +1,7 @@
 # CareCompass: AI-Powered Patient Navigator
 
+🔗 **Live Deployment**: [https://care-compass-9fps.onrender.com](https://care-compass-9fps.onrender.com)
+
 CareCompass is a patient-support and hospital navigation web application that assists users in identifying the appropriate medical department for their symptoms or documents, organizing their visit preparations, viewing specialist doctors across network hospitals, and locating nearby healthcare facilities using live OpenStreetMap (OSM) data.
 
 > [!IMPORTANT]
