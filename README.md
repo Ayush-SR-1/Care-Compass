@@ -59,6 +59,7 @@ pnpm --filter @workspace/carecompass run dev
 ```
 
 3. Open your browser at:
+- For Other Devices: http://172.16.44.86:5173
 - Local: `http://localhost:5173`
 - Network (for mobile devices on same Wi-Fi): `http://<your-local-ip>:5173`
 
