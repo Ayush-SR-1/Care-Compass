@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CareCompass"
+description = "A patient support and hospital navigation app that helps people find the right department, prepare for a visit, and understand their existing medical documents. It offers navigation help only, never diagnosis or treatment recommendations, and processes patient data in memory without saving it."
+version = "1.0.0"
+id = "artifacts/carecompass"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 22278
+
+[services.development]
+run = "pnpm --filter @workspace/carecompass run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/carecompass", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/carecompass/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "22278"
+BASE_PATH = "/"
