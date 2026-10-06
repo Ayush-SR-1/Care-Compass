@@ -461,13 +461,10 @@ async function handleNavigateRequest(req, res) {
         console.warn(`[Ollama Non-OK] Status: ${response.status}`);
       }
     } catch (ollamaErr) {
-      console.warn(`[Ollama Error: ${ollamaErr.message}]`);
-      if (ollamaErr.name !== 'AbortError' && (ollamaErr.cause?.code === 'ECONNREFUSED' || ollamaErr.message?.includes('fetch failed') || ollamaErr.message?.includes('ECONNREFUSED'))) {
-        return res.status(503).json({ error: 'The AI service is temporarily unavailable. Please make sure Ollama is running and try again.' });
-      }
+      console.warn(`[Ollama Error: ${ollamaErr.message}] - falling back to resilient rule-based navigator.`);
     }
 
-    // If model failed or timed out, use resilient fallback
+    // If model failed, timed out, or Ollama is offline (e.g. on cloud host), use resilient fallback
     if (!modelPlan) {
       console.log('[Fallback] Using rule-based fallback routing.');
       modelPlan = fallbackPlan(situation, language);
